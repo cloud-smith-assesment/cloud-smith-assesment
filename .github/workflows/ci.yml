@@ -34,6 +34,6 @@ jobs:
         command: "push"
         format: "python"
         owner: "interview-mohit-yadav"
-        repo: "assesment-2"
+        repo: "interview-mohit-yadav"
         republish: "true"                   # Include if the version remains unchanged
         file: "dist/*"                       # Adjusted to dynamically reference built package
