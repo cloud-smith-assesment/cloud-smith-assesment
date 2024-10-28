@@ -34,4 +34,4 @@ jobs:
         owner: 'Mohit Yadav'
         repo: 'interview-mohit-yadav'
         format: 'pypi'
-        package: dist/*
+        package: 'dist/*'
