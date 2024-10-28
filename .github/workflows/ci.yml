@@ -31,7 +31,7 @@ jobs:
       uses: cloudsmith-io/action@master
       with:
         api_key: ${{ secrets.CLOUDSMITH_API_KEY }}
-        owner: 'mohit-yadav'    # Adjusted to lowercase for consistency with Cloudsmith conventions
+        owner: 'mohit-yadav'                   # Lowercase for consistency with Cloudsmith
         repo: 'interview-mohit-yadav'
-        format: 'python'          # Changed 'python' to 'pypi' to match Cloudsmith's expected format for Python packages
-        package: 'dist/*'
+        format: 'python'
+        package: 'dist/*'                      # Specifies the package location
