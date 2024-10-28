@@ -28,7 +28,7 @@ jobs:
         python setup.py sdist bdist_wheel
 
     - name: Upload package to Cloudsmith
-      uses: cloudsmith-io/cloudsmith-action@master
+      uses: cloudsmith-io/action@master
       with:
         api_key: ${{ secrets.CLOUDSMITH_API_KEY }}
         owner: Mohit Yadav
