@@ -33,7 +33,7 @@ jobs:
         api_key: ${{ secrets.CLOUDSMITH_API_KEY }}
         command: "push"
         format: "python"
-        owner: "@mohit-yadav"
-        repo: "interview-mohit-yadav"
+        owner: "mohit-yadav"
+        repo: "assesment-2"
         republish: "true"                   # Include if the version remains unchanged
         file: "dist/*"                       # Adjusted to dynamically reference built package
