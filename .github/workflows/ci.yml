@@ -33,4 +33,5 @@ jobs:
         api_key: ${{ secrets.CLOUDSMITH_API_KEY }}
         owner: Mohit Yadav
         repository: interview-mohit-yadav
+        format: pypi
         package: dist/*
