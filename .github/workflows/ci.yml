@@ -81,7 +81,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}  # Placeholder; use the correct token output
         command: "push"
         format: "python"
-        owner: "interview-mohit-yadav"
+        owner: "assesment-service"
         repo: "interview-mohit-yadav"
         republish: "true"
         file: "dist/*"
