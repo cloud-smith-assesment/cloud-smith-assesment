@@ -133,7 +133,7 @@ jobs:
         token: ${{ env.TOKEN }}  # Use the OIDC token dynamically generated
         command: "push"
         format: "python"
-        owner: "github-mohit"  # Your Cloudsmith organization name
+        owner: "interview-mohit-yadav"  # Your Cloudsmith organization name
         repo: "interview-mohit-yadav"  # The repository name associated with your service account
         republish: "true"
         file: "dist/*"
