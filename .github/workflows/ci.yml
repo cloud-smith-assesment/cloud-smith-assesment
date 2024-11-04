@@ -124,15 +124,20 @@ jobs:
 
     - name: Retrieve OIDC Token
       id: oidc-token
-      run: echo "token=$(curl -s -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL" | jq -r .value)" >> $GITHUB_ENV
+      run: |
+        echo "TOKEN=$(echo ${{ steps.id_token.outputs.id_token }})" >> $GITHUB_ENV
 
     - name: Upload package to Cloudsmith
       uses: cloudsmith-io/action@master
       with:
-        token: ${{ env.token }}  # Use the OIDC token dynamically generated
+        token: ${{ env.TOKEN }}  # Use the OIDC token dynamically generated
         command: "push"
         format: "python"
-        owner: "abc"  # Your Cloudsmith organization name
-        repo: "mohit"  # The repository name associated with your service account
+        owner: "github-mohit"  # Your Cloudsmith organization name
+        repo: "interview-mohit-yadav"  # The repository name associated with your service account
         republish: "true"
         file: "dist/*"
+
+    - name: Debug Output
+      run: |
+        echo "OIDC Token: ${{ env.TOKEN }}"
