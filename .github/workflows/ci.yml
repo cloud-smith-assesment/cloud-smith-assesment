@@ -139,5 +139,5 @@ jobs:
           owner: "interview-mohit-yadav"      # Your Cloudsmith organization name
           repo: "interview-mohit-yadav"     # The repository name associated with your service account
           republish: "true"
-          file: "dist/*"    # Path to the built package fil
+          file: "dist/*"    # Path to the built package
 
