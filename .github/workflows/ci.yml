@@ -87,8 +87,6 @@
 #         file: "dist/*"
 
 
-
-
 name: CI/CD Workflow
 
 on:
@@ -125,7 +123,7 @@ jobs:
     - name: Retrieve OIDC Token
       id: oidc-token
       run: |
-        echo "TOKEN=$(echo ${{ steps.id_token.outputs.id_token }})" >> $GITHUB_ENV
+        echo "TOKEN=${{ steps.oidc-token.outputs.id_token }}" >> $GITHUB_ENV
 
     - name: Upload package to Cloudsmith
       uses: cloudsmith-io/action@master
@@ -141,3 +139,4 @@ jobs:
     - name: Debug Output
       run: |
         echo "OIDC Token: ${{ env.TOKEN }}"
+
