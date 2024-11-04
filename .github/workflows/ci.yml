@@ -35,5 +35,5 @@ jobs:
         format: "python"
         owner: "interview-mohit-yadav"
         repo: "interview-mohit-yadav"
-        republish: "true"                   # Include if the version remains unchanged
-        file: "dist/*"                       # Adjusted to dynamically reference built package
+        republish: "true"
+        file: "dist/*"
