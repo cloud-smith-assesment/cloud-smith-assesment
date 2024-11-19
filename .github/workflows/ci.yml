@@ -50,6 +50,6 @@ jobs:
           format: "python"
           owner: "interview-mohit-yadav"
           repo: "interview-mohit-yadav"
-          republish: "true"
+          republish: "false"
           file: "dist/*"
 
